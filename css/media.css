@@ -281,6 +281,12 @@
   .tabulator .tabulator-wrap .tabulator-container .tabulator-content .tab-content .tab-content-text h3 {
     font-size: 1.5rem;
   }
+  .slider-main .slider-main-container .slider-main-block .arrows-right {
+    display: none !important;
+  }
+  .slider-main .slider-main-container .slider-main-block .arrows-left {
+    display: none !important;
+  }
   .like .like-container {
     flex-direction: column;
   }
@@ -294,12 +300,21 @@
   .like .like-container .like-btns .like-btn:first-child {
     margin-right: 0;
   }
+  .grid .grid-container .block1 {
+    margin-bottom: 10px;
+  }
+  .grid .grid-container .block2 {
+    margin-bottom: 10px;
+  }
   .grid .grid-container .block2 .block2-image {
     display: none;
   }
   .grid .grid-container .block2 .block2-text {
     width: 100%;
     padding: 15px;
+  }
+  .grid .grid-container .block3 {
+    margin-bottom: 10px;
   }
   .grid .grid-container .block3 .block3-image {
     display: none;
@@ -351,37 +366,14 @@
   .slider-main .slider-main-container .slider-main-block .slick-dots {
     margin-top: 45%;
   }
-  .slider-main .slider-main-container .slider-main-block .arrows-right {
-    margin-top: 10%;
-  }
-  .slider-main .slider-main-container .slider-main-block .arrows-left {
-    margin-top: 10%;
-    margin-left: -7%;
-  }
 }
 @media (max-width: 440px) {
   .slider-main .slider-main-container .slider-main-block .slick-dots {
-    margin-top: 200px;
-  }
-  .slider-main .slider-main-container .slider-main-block .arrows-right {
-    margin-top: 20%;
-    margin-left: 106%;
-  }
-  .slider-main .slider-main-container .slider-main-block .arrows-left {
-    margin-top: 20%;
-    margin-left: -10%;
+    margin-top: 250px;
   }
 }
 @media (max-width: 360px) {
   .slider-main .slider-main-container .slider-main-block .slick-dots {
     margin-top: 250px;
-  }
-  .slider-main .slider-main-container .slider-main-block .arrows-right {
-    margin-top: 25%;
-    margin-left: 108%;
-  }
-  .slider-main .slider-main-container .slider-main-block .arrows-left {
-    margin-left: -14%;
-    margin-top: 25%;
   }
 }

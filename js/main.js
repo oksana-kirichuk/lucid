@@ -27,7 +27,6 @@ $('[data-modal]').click(function() {
 
 // Slick.js
 
-
 $('.slider-main-block').slick({
     dots: true,
     arrows: true,
@@ -60,6 +59,8 @@ $('.slider-main-block').slick({
     ]
 });
 
+// Mobile menu
+
 $('[data-mobile]').click(function () {
   var selector = $(this).attr('data-mobile');
   console.log('data-mobile')
@@ -74,59 +75,3 @@ $('[data-mobile]').click(function () {
   }
 });
 
-{/* <div class="portfolio">
-<div class="flex-wrap">
-    <div class="portfolio-container">
-        <div class="portfolio-item photo1">
-            <img src="img/photo1.jpg" alt="">
-        </div>
-        <div class="portfolio-item photo2">
-            <img src="img/photo2.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo3.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo4.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo5.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo6.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo7.jpg" alt="">
-        </div>
-        <div class="portfolio-item">
-            <img src="img/photo8.jpg" alt="">
-        </div>
-    </div>
-</div>
-</div> */}
-
-// .portfolio {
-//     .portfolio-container {
-//         display: grid;
-//         grid-template-columns: repeat(4, 1fr);
-//         grid-template-rows: repeat(3, 350px);
-//         grid-gap: 20px;
-
-//         .portfolio-item {
-//             img {
-//                 width: 100%; 
-//                 height: 200px;
-//             }
-
-//             &.photo1 {
-//                 // grid-area: auto / 1 / auto / 3;
-//             }
-
-//             &.photo2 {
-
-//             }
-
-            
-//         }
-//     }
-// }

@@ -12,12 +12,8 @@ html, body {
 	font-weight: normal;
 	list-style: none;
 	text-decoration: none;
-	color: #333;
-}
-
-* {
+    color: #333;
     box-sizing: border-box;
-    
 }
 
 // MIXINS LESS
@@ -40,13 +36,15 @@ html, body {
     }
 }
 
-
+// Wrap 
 
 .flex-wrap {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 100px;
 }
+
+// Mobile menu 
 
 .menu-container {
     .overlay {
@@ -71,6 +69,7 @@ html, body {
     }
 }
 
+
 header {
     background-color: #15141a;
     background-image: url(../img/photo.png);
@@ -78,8 +77,6 @@ header {
     background-size: cover;
     background-position: center;
     padding-top: 40px;
-
-    
 
     .header-container {
         .top-header {
@@ -143,8 +140,6 @@ header {
                         &:hover {
                             border-bottom: 2px solid #008ed6;
                         }
-
-                        
                     }
                 }
             }
@@ -201,7 +196,8 @@ header {
 
                         &:hover {
                             background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-                            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);                            border: none;
+                            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);                            
+                            border: none;
                             height: 52px;
                         }
 
@@ -211,12 +207,9 @@ header {
                     }
                 }
             }
+
             .header-image {
                 margin-left: 50px;
-
-                img {
-
-                }
             }
         }
     }
@@ -260,6 +253,7 @@ header {
         z-index: 100;
         visibility: hidden;
         transition: all 0.3s ease;
+        text-align: center;
 
             &.active {
                 opacity: 1;
@@ -281,9 +275,20 @@ header {
         }
         .modal-footer {
             margin-top: 15px;
+            text-align: center;
 
             button {
-
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fff;
+                width: 120px;
+                height: 40px;
+                outline: none;
+                cursor: pointer;
+                border-radius: 3px;
+                transition: all 0.5s ease;
+                background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);                            border: none;
             }
         }
     }
@@ -313,6 +318,7 @@ header {
                 margin-top: 25px;
             }
         }
+
         .overview-cards {
             width: 100%;
             text-align: center;            
@@ -350,6 +356,7 @@ header {
                     line-height: 20px;
                     margin-bottom: 20px;
                 }
+
                 p {
                     color: #1a1a1a;
                     line-height: 20px;
@@ -376,6 +383,7 @@ header {
                 width: 420px;
             }
         }
+
         .details-text {
             float: right;
             width: 50%;
@@ -390,7 +398,6 @@ header {
                     line-height: 48px;
                     text-transform: uppercase;
                     margin-bottom: 20px;
-                    
                 }
 
                 h4 {
@@ -418,6 +425,7 @@ header {
                         width: 25px;
                         height: 25px;
                     }
+
                     span {
                         font-weight: 400;
                         line-height: 36px;
@@ -426,7 +434,6 @@ header {
                         opacity: 0.8;
                     }
                 }
-                
             }
         }
     }
@@ -482,7 +489,6 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-                    
 
                     &.active {
                         position: relative;
@@ -540,30 +546,31 @@ header {
             width: 40%;
 
             span {
-                    color: #008ed6;
-                    font-weight: 700;
-                    letter-spacing: 1.4px;
-                    line-height: 48px;
-                    text-transform: uppercase;
-                    margin-bottom: 20px;
+                color: #008ed6;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                line-height: 48px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
                     
                 }
 
-                h4 {
-                    color: #1a1a1a;
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                    line-height: 48px;
-                }
+            h4 {
+                color: #1a1a1a;
+                font-size: 1.6rem;
+                font-weight: 600;
+                line-height: 48px;
+            }
 
-                p {
-                    color: #1b1b1b;
-                    font-weight: 400;
-                    line-height: 30px;
-                    opacity: 0.8;
-                    margin: 40px 0;
-                }
+            p {
+                color: #1b1b1b;
+                font-weight: 400;
+                line-height: 30px;
+                opacity: 0.8;
+                margin: 40px 0;
+            }
         }
+
         .info-block-image {
             float: right;
             width: 55%;
@@ -615,8 +622,10 @@ header {
             font-weight: 400;
             letter-spacing: 1.4px;
             font-size: 2.5rem;
-            margin-bottom: 80px;        }
+            margin-bottom: 80px;        
+        }
     }
+
     .slider-main-container {
         .slider-main-block {
             display: flex;
@@ -644,8 +653,6 @@ header {
                         height: 15px;
                         width: 15px;
                         outline: none;
-
-                        
                     }
 
                     &.slick-active {
@@ -708,7 +715,6 @@ header {
                             font-weight: 700;
                             color: #fff;
                             opacity: 0.7;
-
                         }
 
                         p {
@@ -729,7 +735,6 @@ header {
     padding: 80px 0;
     min-height: 220px;
     
-
     .like-container {
         display: flex;
         justify-content: space-between;
@@ -743,8 +748,8 @@ header {
                 line-height: 48px;
                 opacity: 0.9;
             }
-
         }
+
         .like-btns {
             .like-btn {
                 font-weight: 700;
@@ -877,8 +882,6 @@ header {
     }
 }
 
-
-
 .pricing {
     padding: 60px 0 10px 0;
 
@@ -939,7 +942,6 @@ header {
             width: 23%;
 
             .price-card {
-                
     
                 &:hover {
                     cursor: pointer;
@@ -1043,7 +1045,6 @@ header {
                 }
             }
         }
-        
     }
 }
 
